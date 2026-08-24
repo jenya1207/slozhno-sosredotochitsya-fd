@@ -10,7 +10,6 @@
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 .header {
-  height: 668px;
   min-height: 668px;
   display: grid;
   grid-template-rows: min-content min-content 1fr;
@@ -21,8 +20,8 @@
 .header__theme-menu {
   display: grid;
   justify-content: end;
-  padding-top: 56px;
-  padding-right: 8px;
+  padding-top: 71px;
+  padding-right: 4px;
 }
 .title__header {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -33,9 +32,8 @@
   font-family: "IBM Plex Mono", monospace;
   padding-left: 4px;
   margin: 0;
-  padding-top: 57px;
-  padding-bottom: 33px;
-  word-spacing: 6px;
+  padding-top: 72px;
+  padding-bottom: 52px;
 }
 .header__rec {
   position: absolute;
@@ -46,7 +44,6 @@
   color: var(--header-rec);
   font-family: "IBM Plex Mono", monospace;
   text-transform: uppercase;
-  padding-right: 4px;
 }
 .header__rec::after {
   content: "";
@@ -72,14 +69,14 @@
   display: grid;
   justify-self: end;
   padding-top: 6px;
-  padding-right: 11px;
+  padding-right: 9px;
 }
 .line-down {
   position: absolute;
   display: grid;
   align-self: end;
+  padding-left: 11px;
   padding-bottom: 15px;
-  padding-left: 9px;
 }
 .line-down::after {
   content: "";
@@ -93,11 +90,14 @@
   color: var(--title-decor-add);
   font-size: 18px;
   font-weight: 700;
-  height: 117px;
   line-height: 23.4px;
   letter-spacing: 0%;
   font-family: "IBM Plex Mono", monospace;
-  word-spacing: 6px;
+    min-height: 117px;
+    margin-bottom: 71px;
+}
+.article {
+
 }
 .title__main {
   font-size: 18px;
@@ -105,7 +105,7 @@
   font-weight: 700;
   line-height: 23.4px;
   font-family: "IBM Plex Mono", monospace;
-  word-spacing: 6px;
+  padding-bottom: 20px;
 }
 .title-decor {
   background-color: var(--accent-color);
@@ -114,7 +114,10 @@
   font-weight: 700;
   line-height: 23.4px;
   font-family: "IBM Plex Mono", monospace;
-  word-spacing: 6px;
+  margin-bottom: 10px;
+}
+.add__title-decor {
+  font-weight: 400;
 }
 .title__add {
   font-size: 18px;
@@ -123,7 +126,6 @@
   color: var(--title-decor-add);
   background-color: var(--accent-color);
   font-family: "IBM Plex Mono", monospace;
-  word-spacing: 6px;
 }
 .text__main {
   font-size: 18px;
@@ -132,16 +134,15 @@
   color: var(--text-color);
   font-family: "IBM Plex Mono", monospace;
   letter-spacing: 0%;
-  word-spacing: 6px;
-  margin: 0;
+  padding-bottom: 20px;
 }
 .content {
-  padding-bottom: 38px;
+  padding-bottom: 30px;
   padding-right: 10px;
   padding-left: 10px;
 }
 .main {
-  padding-top: 29px;
+  padding-top: 35px;
   background-color: var(--background-color);
 }
 .link-main {
@@ -150,8 +151,8 @@
   color: var(--link-main);
 }
 .link-main:hover {
-  text-decoration: underline;
-  color: var(--link-main);
+  text-decoration: none;
+  border-bottom: 1px solid var(--link-main);
 }
 .link-main:focus {
   outline: none;
@@ -162,15 +163,16 @@
 .main-picture {
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 38px;
+  padding-bottom: 30px;
+  padding-top: 18px;
 }
 .style__picture {
-  max-width: 355px;
+  /*max-width: 355px;*/
+  width: 100%;
   padding-bottom: 7px;
 }
 .footer {
   min-height: 688px;
-  height: 668px;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   position: relative;
@@ -183,17 +185,13 @@
   line-height: 83%;
   text-shadow: 2px 2px 0 var(--accent-color);
   text-align: center;
-  padding-top: 180px;
   font-family: "IBM Plex Mono", monospace;
+      padding-top: 283px;
 }
 .content__two {
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 15px;
-}
-.text__main:nth-child(6) {
-  padding-bottom: 10px;
-  margin-bottom: 10px;
 }
 .header__theme-menu-button {
   background-color: transparent;
@@ -202,6 +200,7 @@
   line-height: 18px;
   font-weight: 400;
   color: var(--menu-button);
+  font-family: "IBM Plex Mono", monospace;
 }
 .header__theme-menu-button_active {
   pointer-events: none;
@@ -216,22 +215,29 @@
   outline: none;
 }
 .header__theme-menu-button:focus {
-  text-decoration: underline;
-  color: var(--menu-button);
+  text-decoration: none;
+  border-bottom: 1px solid var(--menu-button);
 }
 .header__theme-menu-list {
   list-style: none;
   display: grid;
   gap: 15px;
 }
-.article__one {
+.article__sky {
   padding-top: 7px;
 }
-.article__four {
-  padding-top: 49px;
+.article_music {
+padding-top: 22px;
 }
-.article__fife {
-  padding-top: 25px;
+.article__walk {
+padding-top: 17px;
+}
+
+.article__eat {
+  padding-top: 21px;
+}
+.article__write {
+  padding-top: 18px;
 }
 .article__text {
   font-size: 18px;
@@ -240,61 +246,14 @@
   color: var(--text-color);
   font-family: "IBM Plex Mono", monospace;
   letter-spacing: 0%;
-  word-spacing: 6px;
   margin-top: 11px;
 }
-.article__title {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23.4px;
-  color: var(--title-decor-add);
-  background-color: var(--accent-color);
-  font-family: "IBM Plex Mono", monospace;
-  word-spacing: 6px;
-  margin: 0;
-}
-.title-picture {
-  background-color: var(--accent-color);
-  color: var(--title-decor-add);
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 23.4px;
-  font-family: "IBM Plex Mono", monospace;
-  word-spacing: 6px;
-  margin: 0;
-  margin-bottom: 10px;
-  margin-top: 14px;
-}
-.line-up__footer::after {
-  content: "";
-  width: 25px;
-  height: 25px;
-  border-top: 1px solid var(--accent-color-line);
-  border-right: 1px solid var(--accent-color-line);
-}
-.line-up__footer {
-  position: absolute;
-  display: grid;
-  justify-self: end;
-  padding-right: 8px;
-}
 .line-down__footer {
-  position: absolute;
-  display: grid;
-  align-self: end;
-  padding-bottom: 42px;
-  padding-left: 11px;
-}
-.line-down__footer::after {
-  content: "";
-  width: 25px;
-  height: 25px;
-  border-bottom: 1px solid var(--accent-color-line);
-  border-left: 1px solid var(--accent-color-line);
+  padding-left: 10px;
+    padding-bottom: 34px;
 }
 @media (min-width: 768px) {
   .header {
-    height: 1024px;
     min-height: 1024px;
     padding: 0;
     padding-right: 11px;
@@ -303,21 +262,23 @@
     display: grid;
     justify-self: end;
     width: 364px;
+    margin-top: 23px;
+        margin-bottom: 186px;
   }
   .line-up {
-    padding-top: 17px;
+    padding-top: 18px;
+    padding-right: 12px;
   }
   .header__rec::after {
-    margin-top: 26px;
+    margin-top: 28px;
   }
   .header__theme-menu {
-    padding-top: 176px;
+    padding-top: 192px;
   }
   .title__header {
-    padding-top: 166px;
+    padding-top: 177px;
     padding-bottom: 137px;
     padding-left: 11px;
-    word-spacing: 19px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   .line-down {
@@ -326,34 +287,33 @@
   }
   .content {
     padding-right: 11px;
-    padding-left: 28px;
     padding-bottom: 58px;
   }
-  .content:nth-child(1) {
+  .content__concentration-difficult {
     display: grid;
-    grid-template-columns: 257px 471px;
-    padding-top: 16px;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 32px;
   }
   .title__main {
-    padding-top: 8px;
-    padding-left: 9px;
+    padding-left: 17px;
   }
   .article__main {
-    padding-top: 16px;
-    padding-left: 8px;
+    padding-left: 25px;
   }
-  .content__two {
-    padding-left: 20px;
-    padding-right: 20px;
+  .article__eat {
+    padding-top: 18px;
+}
+  .article {
+    padding-left: 26px;
+  }
+  .content__fish {
+    padding-left: 12px;
     display: grid;
-    grid-template-columns: 264px 472px;
-  }
-  .article__four {
-    padding-top: 0;
+    grid-template-columns: 1fr 2fr;
   }
   .main-picture {
     padding-left: 28px;
-    padding-top: 33px;
+    padding-bottom: 58px;
   }
   .style__picture {
     display: grid;
@@ -366,127 +326,133 @@
     grid-row: 1;
     grid-column: 1 / 3;
     min-width: 479px;
-    height: 192px;
-    margin-top: 10px;
+    margin-top: 13px;
   }
   .style__picture:nth-child(2) {
     grid-row: 1 / 3;
     grid-column: 3;
-    width: 229px;
-    min-height: 442px;
-    margin-top: 10px;
+    min-width: 229px;
+    min-height: 447px;
+    margin-top: 15px;
   }
   .style__picture:nth-child(3) {
     grid-row: 2 / 4;
     grid-column: 1;
-    width: 229px;
+    min-width: 229px;
     min-height: 568px;
+    margin-top: -12px;
   }
   .style__picture:nth-child(4) {
     grid-row: 2;
     grid-column: 2;
-    width: 230px;
-    height: 230px;
+    min-width: 230px;
+    min-height: 230px;
     padding: 0;
+    margin-top: -12px;
   }
   .style__picture:nth-child(5) {
     grid-row: 3;
     grid-column: 2 / 4;
     min-width: 479px;
     min-height: 318px;
-  }
-  .aricle__main-three {
-    display: grid;
-    gap: 20px;
+    margin-top: -9px;
   }
   .footer {
     min-height: 1024px;
-    height: 1024px;
-  }
-  .line-up__footer {
-    padding-right: 12px;
-    padding-top: 29px;
   }
   .title__footer {
-    padding-top: 380px;
+    margin-top: 170px;
+        padding-left: 13px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
-  .line-down__footer {
-    padding-bottom: 11px;
-    padding-left: 27px;
-  }
   .general {
-    margin-top: 39px;
+    margin-top: 24px;
+        padding-left: 17px;
   }
   .main {
     padding-top: 26px;
+  }
+  .title-decor {
+    margin-bottom: 11px;
+  }
+
+  .line-down__footer {
+    padding-bottom: 0px;
+    margin-bottom: 27px;
+  }
+  .line-up__footer {
+    padding-top: 12px;
+  }
+  .aricle__main-painting {
+    display: grid;
+    gap: 20px;
   }
 }
 @media (min-width: 1024px) {
   .header {
     min-height: 768px;
-    height: 768px;
   }
   .header__theme-menu-list {
     grid-auto-flow: column;
-    gap: 31px;
+    gap: 28px;
   }
   .header__theme-menu {
-    padding-top: 5px;
+   padding-top: 20px;
+        padding-left: 40px;
     justify-content: center;
   }
+  .article_music {
+    padding-top: 15px;
+  }
+  .article__walk {
+    padding-top: 18px;
+  }
   .title__header {
-    padding-top: 266px;
+    padding-top: 275px;
     padding-bottom: 88px;
   }
   .header__block {
     width: 491px;
-    height: 70px;
-    padding-right: 0px;
+    min-height: 70px;
+    margin-bottom: 137px;
+  }
+  .article {
+    padding-left: 21px;
+  }
+  .article__main {
+    padding-left: 19px;
   }
   .title__main {
-    padding-top: 8px;
-        padding-left: 10px;
-  }
-  .content:nth-child(1) {
-    grid-template-columns: 337px 650px;
-    padding-top: 16px;
-  }
-  .content:nth-child(2) {
-    padding-bottom: 62px;
-    display: grid;
-    grid-template-rows: min-content 1fr;
+    padding-left: 20px;
   }
   .general {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    padding-left: 4px;
-        margin-top: -7px;
+    padding-left: 21px;
+        margin-top: 0;
   }
-  .content__two {
-    display: grid;
-    grid-template-columns: 345px 649px;
-    padding-top: 17px;
+  .content__fish {
+    padding-bottom: 61px;
   }
-  .article__fife {
-    padding-top: 0;
+  .main-picture {
+    padding-bottom: 61px;
   }
   .style__picture:nth-child(1) {
     min-width: 650px;
-    height: 260px;
+    min-height: 260px;
   }
   .style__picture:nth-child(2) {
-    width: 314px;
+    min-width: 314px;
     min-height: 595px;
   }
   .style__picture:nth-child(3) {
-    width: 315px;
+     min-width: 315px;
     min-height: 768px;
   }
   .style__picture:nth-child(4) {
-    width: 315px;
-    height: 315px;
+     min-width: 315px;
+    min-height: 315px;
   }
   .style__picture:nth-child(5) {
     min-width: 649px;
@@ -494,17 +460,18 @@
   }
   .footer {
     min-height: 768px;
-    height: 768px;
   }
-  .line-up__footer {
+  .line-up {
     padding-right: 10px;
-    padding-top: 29px;
   }
-  .line-down__footer {
-    padding-bottom: 11px;
+  .line-down {
     padding-left: 30px;
   }
   .title__footer {
-    padding-top: 197px;
+    padding-top: 140px;
+        padding-left: 19px;
+  }
+  .title-decor {
+    padding-top: 1px;
   }
 }
