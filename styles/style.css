@@ -93,11 +93,8 @@
   line-height: 23.4px;
   letter-spacing: 0%;
   font-family: "IBM Plex Mono", monospace;
-    min-height: 117px;
-    margin-bottom: 71px;
-}
-.article {
-
+  min-height: 117px;
+  margin-bottom: 71px;
 }
 .title__main {
   font-size: 18px;
@@ -186,7 +183,7 @@
   text-shadow: 2px 2px 0 var(--accent-color);
   text-align: center;
   font-family: "IBM Plex Mono", monospace;
-      padding-top: 283px;
+  padding-top: 283px;
 }
 .content__two {
   padding-right: 10px;
@@ -227,10 +224,10 @@
   padding-top: 7px;
 }
 .article_music {
-padding-top: 22px;
+  padding-top: 22px;
 }
 .article__walk {
-padding-top: 17px;
+  padding-top: 17px;
 }
 
 .article__eat {
@@ -250,7 +247,7 @@ padding-top: 17px;
 }
 .line-down__footer {
   padding-left: 10px;
-    padding-bottom: 34px;
+  padding-bottom: 34px;
 }
 @media (min-width: 768px) {
   .header {
@@ -263,7 +260,7 @@ padding-top: 17px;
     justify-self: end;
     width: 364px;
     margin-top: 23px;
-        margin-bottom: 186px;
+    margin-bottom: 186px;
   }
   .line-up {
     padding-top: 18px;
@@ -302,7 +299,7 @@ padding-top: 17px;
   }
   .article__eat {
     padding-top: 18px;
-}
+  }
   .article {
     padding-left: 26px;
   }
@@ -362,12 +359,12 @@ padding-top: 17px;
   }
   .title__footer {
     margin-top: 170px;
-        padding-left: 13px;
+    padding-left: 13px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   .general {
     margin-top: 24px;
-        padding-left: 17px;
+    padding-left: 17px;
   }
   .main {
     padding-top: 26px;
@@ -397,8 +394,8 @@ padding-top: 17px;
     gap: 28px;
   }
   .header__theme-menu {
-   padding-top: 20px;
-        padding-left: 40px;
+    padding-top: 20px;
+    padding-left: 40px;
     justify-content: center;
   }
   .article_music {
@@ -430,7 +427,7 @@ padding-top: 17px;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     padding-left: 21px;
-        margin-top: 0;
+    margin-top: 0;
   }
   .content__fish {
     padding-bottom: 61px;
@@ -447,11 +444,11 @@ padding-top: 17px;
     min-height: 595px;
   }
   .style__picture:nth-child(3) {
-     min-width: 315px;
+    min-width: 315px;
     min-height: 768px;
   }
   .style__picture:nth-child(4) {
-     min-width: 315px;
+    min-width: 315px;
     min-height: 315px;
   }
   .style__picture:nth-child(5) {
@@ -469,7 +466,7 @@ padding-top: 17px;
   }
   .title__footer {
     padding-top: 140px;
-        padding-left: 19px;
+    padding-left: 19px;
   }
   .title-decor {
     padding-top: 1px;
