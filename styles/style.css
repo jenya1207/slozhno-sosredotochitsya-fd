@@ -413,7 +413,7 @@
     padding-bottom: 61px;
   }
   .main-picture {
-    padding-bottom: 61px;
+    padding-bottom: 65px;
   }
   .style__picture:nth-child(1) {
     min-width: 650px;
@@ -448,7 +448,10 @@
     padding-top: 140px;
     padding-left: 19px;
   }
-  .title-decor {
-    padding-top: 1px;
-  }
+  .decor__changing {
+        margin-left: 19px;
+    }
+    .article__sky {
+        padding-left: 19px;
+    }
 }
